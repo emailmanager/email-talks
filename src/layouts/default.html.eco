@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="author" content="<%= @conf.name %>">
   <meta name="description" content="<%= @conf.description %>">
-  <meta name="viewport" content="width=device-width">
+  
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <!-- FACEBOOK -->
@@ -17,7 +17,11 @@
   <meta property="og:title" content="<%= @conf.name %>">
   <meta property="og:description" content="<%= @conf.description %>">
   <meta property="og:image" content="<%= @getUrl() %>/<%= @getTheme() %>/img/badge.jpg">
+
+
   <!-- / FACEBOOK -->
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
 
   <link rel="shortcut icon" href="<%= @getTheme() %>/img/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="<%= @getTheme() %>/img/apple-touch-icon.png">
@@ -31,23 +35,21 @@
 
   <div class="global">
 
-    <%-@partial('nav.html.eco', @)%>
+    
     <%-@partial('header.html.eco', @)%>
-
+    <%-@partial('nav.html.eco', @)%>
     <!-- CONTENT -->
     <div class="content" id="content">
       <div class="wrapper">
         <%- @content %>
-        <!-- FOOTER -->
-        <footer class="footer">
-          <p>Made with ♥ by <a href="https://github.com/braziljs/conf-boilerplate">Conf Boilerplate</a> :)</p>
-        </footer>
-        <!-- / FOOTER -->
       </div>
     </div>
     <!-- / CONTENT -->
 
+
   </div>
+
+  <div class="content-footer"></div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="<%= @getTheme() %>/js/jquery.js"><\/script>')</script>

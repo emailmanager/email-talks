@@ -1,13 +1,11 @@
 <h2 class="section-title"><%= @labels['schedule'] %></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 <div class="schedule-tbl">
   <table>
     <thead>
       <tr>
-        <th class="schedule-time">Time</th>
-        <th class="schedule-slot">Slot</th>
-        <th class="schedule-description">Description</th>
+        <th class="schedule-time">Horário</th>
+        <th class="schedule-slot">Talks</th>
+        <th class="schedule-description">Descrição</th>
       </tr>
     </thead>
     <tbody>
@@ -38,4 +36,11 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
     </tbody>
   </table>
+</div>
+
+
+<h2 class="title-call">Não fique de fora dessa!</h2>
+
+<div style="text-align: center;">
+<a href="#" class="call btn-call">Inscreva-se agora!</a>
 </div>

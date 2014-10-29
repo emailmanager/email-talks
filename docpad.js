@@ -7,28 +7,30 @@ module.exports = {
 
     // Conference info
     conf: {
-      name: "Conference name",
+      name: "Email Talks",
       description: "Conference description",
-      date: "November 15",
+      date: "Novembro 18",
       // If your event is free, just comment this line
-      price: "$100",
-      venue: "Coco Bongo",
-      address: "Boulevard Kukulcan, 30",
-      city: "Cancún",
-      state: "Quintana"
+
+      price: "R$ 50",
+      venue: "Florianópolis/SC",
+      address: "SEDE ACIF - Rua: Emílio Blum, 121. Centro Florianópolis - SC - ",
+      city: "Florianópolis",
+      state: "Santa Catarina"
     },
 
     // The Call To Action button at the header,
     // If you don't want this, just remove the callToAction property.
     callToAction: {
-        text: "Register now!",
-        link: "http://eventick.com.br"
+        text: "Inscreva-se agora!",
+        link: "http://www.eventick.com.br/email-talks"
     },
 
     // "Fork me on GitHub", if you don't want this, just remove the forkButton property
     forkButton: {
         repository: "https://github.com/braziljs/conf-boilerplate"
     },
+
 
     // Site info
     site: {
@@ -52,88 +54,69 @@ module.exports = {
 
     // Labels which you can translate to other languages
     labels: {
-      about: "About",
-      location: "Location",
-      speakers: "Speakers",
-      schedule: "Schedule",
-      sponsors: "Sponsors",
-      partners: "Partners",
-      contact: "Contact"
+      about: "Sobre",
+      location: "Local",
+      speakers: "Palestrantes",
+      schedule: "Programação",
+      sponsors: "Patrocínio",
+      partners: "Apoio",
+      contact: "Contato"
     },
 
     // The entire schedule
     schedule: [
       {
-        name: "Check-in / Breakfast",
-        time: "9h00"
+        name: "Credenciamento",
+        time: "19h00"
       },
       {
-        name: "Linus Torvalds",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Linux Foundation",
+        name: "Cristiano Chaussard ",
+        photo: "themes/yellow-swan/img/cristiano.jpg",
+        bio: "Cristiano é especialista em e-commerce há 12 anos, diretor da Flexy Negócios Digitais, de Florianópolis, diretor-fundador do Grupo Digital de Santa Catarina (GDSC) e professor de e-commerce na Estácio de Sá.",
+        company: "Flexy Negócios Digitais",
         link: {
-          href: "http://twitter.com/linus",
-          text: "@linus"
+          href: "https://twitter.com/cristianoflexy",
+          text: "@cristianoflexy"
         },
         presentation: {
-          title: "Digging into a Linux Kernel",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "10h00"
+          title: "Recuperando Clientes Inativos usando Email e E-commerce B2B",
+          description: "A palestra mostra técnicas para recuperar clientes uma carteira de clientes inativos na indústria para tornar com retorno de investimento em curto prazo e alta rentabilidade. Tudo isto utilizando comunicação por e-mail tele-marketing e e-commerce B2B.",
+          time: "19h30"
         }
       },
       {
-        name: "Bill Gates",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Microsoft",
+        name: "Rodrigo Gonçalves",
+        photo: "themes/yellow-swan/img/Jimmy7.jpg",
+        bio: "Rodrigo é CEO da Jimmy, empresa de tecnologia e inovação voltada para visibilidade de marcas na internet e Co-Fundador do OlhóCON, o maior Evento de Marketing Digital e Empreendedorismo do Sul do Brasil.",
+        company: "Jimmy",
         link: {
-          href: "http://github.com/billy95",
-          text: "@billy95"
+          href: "https://twitter.com/rdeag",
+          text: "@rdeag"
         },
         presentation: {
-          title: "Introducing Windows 12",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "11h00"
+          title: "A Internet como Canal de Relacionamento",
+          description: "A internet já é mais que um canal de comunicação, é um ambiente de oportunidades para o relacionamento com seu público alvo. Nesta palestra Rodrigo apresentará as principais estratégias para transformar os seus canais digitais em um meio poderoso para o relacionamento próximo com seus clientes.",
+          time: "20h00"
         }
       },
       {
-        name: "Lunch",
-        time: "12h00"
+        name: "Parada pro cafezinho",
+        time: "20h30"
       },
       {
-        name: "Chuck Norris",
-        photo: "themes/yellow-swan/img/speaker.jpg",
+        name: "Stamatios Stamou Jr",
+        photo: "themes/yellow-swan/img/ssjunior.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Delta Command",
+        company: "eCentry",
         link: {
-          href: "http://twitter.com/littlechuck",
-          text: "@littlechuck"
-        },
-        presentation: {
-          title: "How to kill a elephant with one finger",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "13h00"
-        }
-      },
-      {
-        name: "Steve Jobs",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Apple, Inc.",
-        link: {
-          href: "http://github.com/stevie",
-          text: "@stevie"
+          href: "https://twitter.com/ssjunior",
+          text: "@ssjunior"
         },
         presentation: {
           title: "Presenting iPad",
           description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "14h00"
+          time: "21h00"
         }
-      },
-      {
-        name: "Coffee-break",
-        time: "15h00"
       },
       {
         name: "Mark Zuckerberg",
@@ -151,38 +134,44 @@ module.exports = {
         }
       },
       {
-        name: "Steve Wozniak",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Apple, Inc.",
-        link: {
-          href: "http://twitter.com/woz",
-          text: "@woz"
-        },
-        presentation: {
-          title: "Why do I prefer Android over iPhone",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "17h00"
-        }
+        name: "Encerramento",
+        time: "22h00"
       }
+      
     ],
 
     // List of Sponsors
     sponsors: [
       {
-        name: "Eventick",
-        logo: "themes/yellow-swan/img/sponsor.png",
-        url: "http://eventick.com.br"
+        name: "eCentry",
+        logo: "themes/yellow-swan/img/ecentry.png",
+        url: "http://ecentry.com"
+      },
+      {
+        name: "Emailmanager",
+        logo: "themes/yellow-swan/img/emm.png",
+        url: "http://www.emailmanager.com"
       }
     ],
 
     // List of Partners
     partners: [
       {
-        name: "BrazilJS",
-        logo: "themes/yellow-swan/img/partner.png",
-        url: "http://braziljs.org"
+        name: "ABComm",
+        logo: "themes/yellow-swan/img/abcomm.png",
+        url: "http://www.abcomm.org"
+      },
+      {
+        name: "Jimmy",
+        logo: "themes/yellow-swan/img/jimmy-logo.png",
+        url: "http://www.jimmyffw.com/"
+      },
+      {
+        name: "Flexy",
+        logo: "themes/yellow-swan/img/flexy.png",
+        url: "http://www.flexy.com.br"
       }
+      
     ],
 
     // Theme path

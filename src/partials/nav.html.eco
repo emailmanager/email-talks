@@ -1,5 +1,5 @@
 <!-- NAVIGATION -->
-<nav id="nav">
+<nav id="nav" data-nav>
   <ul class="wrapper">
     <% for section in @sections : %>
       <li class="nav-item">
