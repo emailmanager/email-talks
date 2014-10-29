@@ -4,35 +4,67 @@
    MAIN LAYOUT
    ========================================================================== */
 html {
-  background:#F6F6F6;
-  font:normal normal 10px/1.2em helvetica, arial, sans-serif;
+  font:normal normal 10px/1.2em 'Roboto', sans-serif;
   color:#777;
+}
+
+* {
+  font-family: 'Roboto', sans-serif !important;
 }
 
 /* =============================================================================
    BASIC STYLES
    ========================================================================== */
-h1, h2, h3, h4, h5, h6 {color:#2b2b2b;}
+h1, h2, h3, h4, h5, h6 {
+color: #5fb6ec;
+/*padding-left: 30px;*/
+
+}
+
+h2{
+  text-align: center;
+}
 
 /* =============================================================================
    NAVIGATION
    ========================================================================== */
-nav {background: #2b2b2b;}
-.nav-link {color:#e7e7e7;}
+nav {}
+.nav-link {
+color: #59595b;
+font-size: 16px;
+font-weight: lighter;
+padding: 0 5px 10px 5px;
+
+}
 .nav-link:active,
 .nav-link:hover,
 .nav-link:focus,
-.nav-link.current {color:#fff;}
+.nav-link.current {
+border-bottom: 7px solid #5fb6ec;
+}
 
 /* =============================================================================
    HEADER
    ========================================================================== */
 .header {
-  background-image: url('../img/cover.jpg');
-  background-color: #2b2b2b;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 100% auto;
+
+}
+
+
+
+.content-footer {
+    background-image: url(/themes/yellow-swan/img/footer.png);
+    position: static;
+    bottom: 180px;
+    width: 100%;
+    left: 0px;
+    height: 321px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover{
+  width: 100%;
 }
 .logo-link, .tagline, .call-action-area .price {
   color:#fff;
@@ -66,19 +98,17 @@ nav {background: #2b2b2b;}
 /* =============================================================================
    CONTENT
    ========================================================================== */
-.content a {color:#f0a303;}
-.content a:hover, .content a:focus {
-  color:#fddd52;
-  text-decoration: underline;
-}
+.content a {color:#59595b;font-weight: normal;
+line-height: 30px;}
+
 
 /* =============================================================================
    ABOUT
    ========================================================================== */
 .about {
-  border:1px solid #e7e7e7;
+  
   background:#fff;
-  border-radius:4px;
+  
 }
 
 /* =============================================================================
@@ -96,13 +126,14 @@ nav {background: #2b2b2b;}
    ========================================================================== */
 .speaker-photo .photo {
   border-radius: 50%;
-  box-shadow: 0 0 0 8px rgba(0,0,0,.07);
+  box-shadow: 0 0 0 8px #f89848;
   .transition(all 0.3s ease-out);
 }
 .speakers-item:hover .speaker-photo .photo {box-shadow: 0 0 0 8px rgba(0,0,0,.3);}
 .speech-time {
   color:#fff;
-  background:#2b2b2b;
+  background:#5fb6ec;
+  font-weight: bold;
   border-radius: 8px;
 }
 
@@ -111,29 +142,47 @@ nav {background: #2b2b2b;}
    ========================================================================== */
 .schedule-tbl {
   background:#fff;
-  border:1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.15);
 }
-.schedule-tbl table {background:#fff;}
-.schedule-tbl td, .schedule-tbl th {border-bottom:1px solid #e7e7e7;}
-.schedule-tbl tbody tr:nth-child(2n+1) {background:#f6f6f6;}
+.schedule-tbl table {background:#fff ;}
+.schedule-tbl tbody tr:nth-child(2n) {
+
+
+
+background-color: #fff ;
+
+}
 .schedule-tbl th {color:#2b2b2b;}
 .schedule-tbl .speaker-photo .photo {box-shadow: 0 0 0 1px rgba(0,0,0,.3);}
 .speakers-company {color:#999;}
 .schedule-slot {color:#2b2b2b;}
-.schedule-tbl tbody tr:hover {background:#fffde1;}
-.schedule-coffee, .schedule-closing, .schedule-lunch, .schedule-other {color:#214f87;}
+.schedule-tbl tbody tr:hover {background:rgba(234, 234, 234, 0.17);}
+.schedule-coffee, .schedule-closing, .schedule-lunch, .schedule-other {
+background-color: rgba(242, 189, 193, 0.18) !important;
+}
+
+.schedule-tbl thead tr {
+  height: 90px;
+background-color: rgba(209, 211, 212, 0.39);
+}
+
+
 
 /* =============================================================================
    SPONSORS
    ========================================================================== */
-.sponsor-link, .partner-link {
-  background: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.15);
+.sponsor--link, .partner-link {
+
 }
-.sponsor-link:hover, .sponsor-link:focus, .partner-link:hover, .partner-link:focus {border-color: #f0a303;}
+
+
+
+.sponsors .section-title, .partners .section-title{
+  text-align: center;
+}
+
+.sponsors-list , .partners-list{
+  text-align: center;
+}
 
 
 /* =============================================================================
@@ -148,23 +197,136 @@ nav {background: #2b2b2b;}
 .form input[type=text]:focus, .form input[type=email]:focus, .form textarea:focus {border-color:#aaa;outline:0;}
 
 
-/* =============================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (max-width : 1024px) {
-  .header {
-    background-size: auto 100%;
-  }
+.content .wrapper {
+  /*background-color: #f1f2f2;*/
+  padding: 150px;
 }
-@media only screen and (max-width : 480px) {
-  /* speakers */
-  .speaker-photo .photo {box-shadow: 0 0 0 3px rgba(0,0,0,.07);}
-  .speech-title {font-weight: bolder;}
-  .speech-time {
-    color:#2b2b2b;
-    background: transparent;
-    font-weight: bolder;
-  }
-  .github-link { display: none; }
+
+
+.speech-name{
+  color: #59595b;
+  font-size: 22px;
+font-weight: normal;
+}
+
+.speakers-name {
+  color: #59595b;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.speakers-bio {
+  /*padding-left: 30px;*/
+  font-size: 15px;
+}
+
+.speakers-list{
+  padding: 0px;
+}
+
+.speakers h2{
+  margin-bottom: 33px;
+}
+
+
+.notice {
+width: 360px;
+height: 246px;
+position: absolute;
+top: -14px;
+right: 10%;
+background-color: #f9b144;
+box-shadow: 12px 12px 1px 2px rgba(0, 0, 0, 0.39);
+border-radius: 6px;
+text-align: center;
+padding: 100px 20px 0 20px;
+}
+
+a.call{
+  background-color: #22c019;
+color: #fff;
+font-weight: bold;
+font-size: 30px;
+width: 300px;
+padding: 25px;
+border-radius: 7px;
+box-shadow: 6px 7px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+.notice .price{
+  font-size: 49px;
+color: #fff;
+margin-top: 73px;
+font-weight: bold;
+margin-bottom: 32px;
+}
+
+.notice p{
+  color: #fff;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.notice a.promenor{
+  text-decoration: underline;
+color: #3f77d0;
+font-weight: bold;
+}
+
+.title-call{
+  color: #59595b;
+  text-align: center;
+  margin-bottom: 90px;
+  margin-top: 60px;
+}
+
+.btn-call {
+  display: block;
+margin: 0 auto;
+margin-bottom: 40px;
+}
+
+
+.newsletter{
+  background-color: #f1f2f2;
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.newsletter h2{
+    text-align: center;
+font-size: 27px;
+margin-bottom: 30px;
+
+
+
+}
+
+.newsletter button{
+  font-size: 28px;
+background-color: #FFB800;
+color: #fff;
+padding: 12px;
+font-weight: lighter;
+}
+
+.newsletter input {
+  display: inline-block;
+padding: 11px;
+
+border-radius: 3px;
+font-size: 30px;
+font-weight: lighter;
+}
+
+
+.main-menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #fff;
+box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
