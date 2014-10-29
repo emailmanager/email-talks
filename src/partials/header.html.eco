@@ -1,0 +1,18 @@
+
+
+<!-- HEADER -->
+<header class="header">
+
+  <img class="cover" src="themes/yellow-swan/img/cover.jpg" />
+
+  <div class="notice">
+      <a href="#" class="call">Inscreva-se agora!</a>
+      <div class="price">R$ 50</div>
+      <p>
+        O valor arrecadado será revertido em doações para a <a href="#" class="promenor">Promonor</a>.
+      </p>
+  </div>
+
+</header>
+<!--  / HEADER -->
+
