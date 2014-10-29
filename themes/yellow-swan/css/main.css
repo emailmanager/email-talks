@@ -553,7 +553,7 @@ h2 {
    HEADER
    ========================================================================== */
 .content-footer {
-  background-image: url(/themes/yellow-swan/img/footer.png);
+  background-image: url(../img/footer.png);
   position: static;
   bottom: 180px;
   width: 100%;
@@ -815,4 +815,14 @@ a.call {
   z-index: 9999;
   background-color: #fff;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.footer-bar {
+  background-color: #335791;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  height: 28px;
+}
+.footer-bar a {
+  color: #fff;
 }

@@ -151,8 +151,8 @@
     var id = this.getActive()
       , item = this.nav.querySelector('a[href="#' + id + '"]')
 
-    this.active && this.active.classList.remove('active')
-    item && item.classList.add('active')
+    this.active && this.active.classList.remove('current')
+    item && item.classList.add('current')
     this.nav.classList[this.nav_offset < window.pageYOffset ? 'add' : 'remove']('main-menu-fixed')
     this.active = item
   }
