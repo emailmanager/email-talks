@@ -49,10 +49,15 @@
 
                 conf.map.canvas.setCenter(results[0].geometry.location);
 
-                new google.maps.Marker({
+                var marker = new google.maps.Marker({
                     map: conf.map.canvas,
                     position: results[0].geometry.location,
                     icon: conf.map.marker
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                    window.location = 'https://www.google.com.br/maps/place/R.+Em%C3%ADlio+Blum,+121+-+Centro,+Florian%C3%B3polis+-+SC,+88020-010/@-27.5929276,-48.5448952,17z/data=!3m1!4b1!4m2!3m1!1s0x9527383c127b99ed:0x2cb7e891b8fe28e?hl=pt-BR';
+
                 });
             } else {
                 if (window.console) {
